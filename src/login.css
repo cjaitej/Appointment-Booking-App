@@ -1,0 +1,88 @@
+.login {
+  display: flex;
+  flex-direction: row;
+}
+
+.login--image {
+  width: 40%;
+  margin-right: 113px;
+  margin-left: auto;
+}
+
+.login--text {
+  display: block;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login--title {
+  color: #55ef93;
+  text-align: left;
+  font-family: Padauk;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.login--field {
+  border-radius: 10px;
+  background: #d9d9d9;
+  width: 456px;
+  height: 63px;
+  flex-shrink: 0;
+  padding-inline-start: 20px;
+  font-size: 30px;
+  margin-left: auto;
+}
+
+.otp-check {
+  display: flex;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.login-otp--field {
+  border-radius: 10px;
+  background: #d9d9d9;
+  width: 150px;
+  height: 63px;
+  flex-shrink: 0;
+  padding-inline-start: 20px;
+  font-size: 30px;
+  margin-left: auto;
+}
+
+.login-otp--field::-webkit-outer-spin-button,
+.login-otp--field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login--button {
+  color: #fff;
+  text-align: center;
+  font-family: Padauk;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  background: rgb(52, 178, 206, 0.92);
+  width: 155px;
+  height: 60px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  margin-left: 20px;
+}
+
+.login--button:hover {
+  background-color: #fff;
+  color: rgb(52, 178, 206, 0.92);
+  cursor: pointer;
+}

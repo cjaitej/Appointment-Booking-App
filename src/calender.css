@@ -1,0 +1,104 @@
+.Card--button {
+  background-color: #b93e3e;
+  color: white;
+  border: solid 1px black;
+  padding: 33px 80px;
+  text-align: center;
+  font-family: inter;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Date--button:hover {
+  background-color: rgb(144, 225, 87);
+  cursor: pointer;
+}
+
+.Date--button {
+  background-color: #fff;
+  color: black;
+  border: solid 1px;
+  font-family: inter;
+  padding: 33px 70.8px;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.Calenderheader--login {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-right: 44px;
+  background: transparent;
+  padding: 10px;
+}
+
+.Calenderheader--login:hover {
+  color: #0e83d7;
+  cursor: pointer;
+}
+
+.no-access {
+  background-color: #c6ebec;
+  color: black;
+  border: 0px;
+  font-family: inter;
+  padding: 33px 70.8px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.calender {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card--row {
+  display: flex;
+  flex-direction: row;
+}
+
+.day-of-Week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.select--month,
+.select--year {
+  width: 50%;
+  padding: 33px 80px;
+  background-color: #e0cf18f3;
+  border: 0;
+  font-size: 20px;
+  font-family: inter;
+  font-weight: bolder;
+  text-align: center;
+  border: solid 1px;
+}
+
+.select--month {
+  border-top-left-radius: 10px;
+}
+
+.select--year {
+  border-top-right-radius: 10px;
+}
+
+.ignore {
+  background-color: transparent;
+  border: 0;
+}
+
+.monthName-options {
+  background-color: #595756;
+  text-align: center;
+  font-weight: bold;
+}
