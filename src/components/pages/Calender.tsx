@@ -9,13 +9,14 @@ export default function Calender() {
   const [clicked_date, setClickedDate] = useState("");
   const location = useLocation();
   const email_id = location.state.email;
-  const myUrl = "http://localhost:5000";
+  // const myUrl = "http://localhost:5000";
 
   let Day_data = DayNames.map((item) => {
     return <div className={"Card--button"}>{item}</div>;
   });
   let today: Date = new Date();
-  const monthName = {
+
+  const monthName: any = {
     0: "JAN",
     1: "FEB",
     2: "MAR",
@@ -43,6 +44,7 @@ export default function Calender() {
     "NOV",
     "DEC",
   ];
+
   let today_month = today.getMonth();
   let [month, Setmonth] = useState(monthName[today_month]);
   let [year, Setyear] = useState(today.getFullYear());
@@ -51,7 +53,7 @@ export default function Calender() {
   let a = Array(date.getDay()).fill(0);
   function checkLeapYear(year: number) {
     if ((0 == year % 4 && 0 != year % 100) || 0 == year % 400) {
-      return {
+      let temp: any = {
         jan: 31,
         feb: 29,
         mar: 31,
@@ -65,8 +67,9 @@ export default function Calender() {
         nov: 30,
         dec: 31,
       };
+      return temp;
     } else {
-      return {
+      let temp: any = {
         jan: 31,
         feb: 28,
         mar: 31,
@@ -80,6 +83,7 @@ export default function Calender() {
         nov: 30,
         dec: 31,
       };
+      return temp;
     }
   }
 
